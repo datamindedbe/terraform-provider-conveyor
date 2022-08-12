@@ -18,9 +18,9 @@ resource "conveyor_environment" "dev" {
 }
 
 resource "conveyor_environment_user" "my_environment_user" {
-  project_id = conveyor_environment.dev.id
-  user_id    = "test@gmail.com"
-  role       = "admin"
+  environment_id = conveyor_environment.dev.id
+  user_id        = "test@gmail.com"
+  role           = "admin"
 }
 ```
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.3 12/8/2022
+
+### features
+
+- Added support for Conveyor teams
+
 ## 0.0.2 7/6/2022
 
 ### features
