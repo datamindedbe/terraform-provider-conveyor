@@ -13,12 +13,12 @@ Links a user to a Conveyor team.
 ## Example Usage
 
 ```terraform
-resource "conveyor_team" "dev" {
-  name = "dev"
+resource "conveyor_team" "my_team" {
+  name = "my_team"
 }
 
-resource "conveyor_team_user" "dev_user" {
-  team_id     = conveyor_team.dev.id
+resource "conveyor_team_user" "my_team_user" {
+  team_id     = conveyor_team.my_team.id
   user_id     = "test@gmail.com"
   member_type = "admin"
 }
@@ -37,4 +37,11 @@ resource "conveyor_team_user" "dev_user" {
 
 - `id` (String) The ID of this resource
 
+## Import
 
+Import is supported using the following syntax:
+
+```shell
+export TEAM_ID=$(conveyor team get --name my_team -ojson | jq -r ".Id")
+terraform import conveyor_team_user.my_team_user "$TEAM_ID"/test@gmail.com
+```

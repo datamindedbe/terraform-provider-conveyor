@@ -13,8 +13,8 @@ Provides a Conveyor team.
 ## Example Usage
 
 ```terraform
-resource "conveyor_team" "dev" {
-  name = "dev"
+resource "conveyor_team" "my_team" {
+  name = "my_team"
 }
 ```
 
@@ -29,4 +29,11 @@ resource "conveyor_team" "dev" {
 
 - `id` (String) The id of the team.
 
+## Import
 
+Import is supported using the following syntax:
+
+```shell
+export TEAM_ID=$(conveyor team get --name my_team -ojson | jq -r ".Id")
+terraform import conveyor_team.my_team "$TEAM_ID"
+```

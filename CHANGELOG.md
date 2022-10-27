@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.5 27/10/2022
+
+### features
+- Added support for import `conveyor_team` and `conveyor_team_user`
+
+### bugfixes
+
+- Show an error message when the user is not logged in
+- Use the same token used by the recent conveyor cli's
+
 ## 0.0.4 12/8/2022
 
 ### features
