@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.6 28/10/2022
+
+### bugfixes
+
+- Fixed an issue where m2m credentials would result in a failure when trying to use the provider
+
 ## 0.0.5 27/10/2022
 
 ### features
