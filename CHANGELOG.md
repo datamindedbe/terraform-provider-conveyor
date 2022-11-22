@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.7 22/11/2022
+
+### bugfixes
+
+- Fixed some typos in the environment terraform resources
+
 ## 0.0.6 28/10/2022
 
 ### bugfixes

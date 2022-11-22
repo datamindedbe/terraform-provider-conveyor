@@ -27,9 +27,9 @@ resource "conveyor_environment" "dev" {
 
 ### Optional
 
-- `airflow_version` (String) The airflow version of the environment, either 1 or 2, defaults to 2.
-- `cluster_id` (String) The cluster if of the environment
-- `deletion_protection` (Boolean) Wether to project your environment from deletion.
+- `airflow_version` (String) The Airflow version of the environment, either 1 or 2, defaults to 2.
+- `cluster_id` (String) The cluster id of the environment
+- `deletion_protection` (Boolean) Whether to protect your environment from deletion.
 - `instance_lifecycle` (String) The instance lifecycle for the environment, either spot or on-demand, defaults to spot.
 
 ### Read-Only
