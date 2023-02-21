@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.8 21/02/2022
+
+### features
+
+- Adds support for the conveyor Airflow Datahub integration
+- Added defaults to our terraform docs
+
 ## 0.0.7 22/11/2022
 
 ### bugfixes
