@@ -28,5 +28,14 @@ data "conveyor_team" "my_team" {
 ### Read-Only
 
 - `id` (String) The id of the team.
+- `users` (List of Object) (see [below for nested schema](#nestedatt--users))
+
+<a id="nestedatt--users"></a>
+### Nested Schema for `users`
+
+Read-Only:
+
+- `id` (String)
+- `member_type` (String)
 
 

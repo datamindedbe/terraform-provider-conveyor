@@ -27,7 +27,7 @@ data "conveyor_cluster" "dev" {
 
 ### Read-Only
 
-- `default` (Boolean) Wether this is the default cluster.
+- `default` (Boolean) Whether this is the default cluster.
 - `id` (String) The id of cluster.
 
 

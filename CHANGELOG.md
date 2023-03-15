@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.0 15/03/2022
+
+### features
+
+- Adds support for listing the users of a project through the `conveyor_project_users` datasource
+- Adds support for listing the teams of a project through the `conveyor_project_teams` datasource
+- Adds support for listing the users of an environment through the `conveyor_environment_users` datasource
+- Adds support for listing the teams of an environment through the `conveyor_environment_teams` datasource
+- The `conveyor_team` datasource now exposes the `users` attribute
+
+## 0.0.9 27/02/2022
+
+### features
+
+- Adds support for setting the Airflow configuration
+
 ## 0.0.8 21/02/2022
 
 ### features

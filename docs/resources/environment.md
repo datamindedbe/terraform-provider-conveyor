@@ -27,6 +27,7 @@ resource "conveyor_environment" "dev" {
 
 ### Optional
 
+- `airflow_configuration` (Block List, Max: 1) Allows you to configure Airflow. (see [below for nested schema](#nestedblock--airflow_configuration))
 - `airflow_version` (String) The Airflow version of the environment, either 1 or 2, defaults to 2. Defaults to `2`.
 - `cluster_id` (String) The cluster id of the environment.
 - `datahub_integration` (Block List, Max: 1) Allows you to configure the Airflow DataHub integration. (see [below for nested schema](#nestedblock--datahub_integration))
@@ -36,6 +37,23 @@ resource "conveyor_environment" "dev" {
 ### Read-Only
 
 - `id` (String) The id of the environment.
+
+<a id="nestedblock--airflow_configuration"></a>
+### Nested Schema for `airflow_configuration`
+
+Optional:
+
+- `core` (Block List, Max: 1) Allows you to configure the core Airflow settings. (see [below for nested schema](#nestedblock--airflow_configuration--core))
+
+<a id="nestedblock--airflow_configuration--core"></a>
+### Nested Schema for `airflow_configuration.core`
+
+Optional:
+
+- `max_active_task_per_dag` (Number) Sets the parallelism configuration in Airflow. Defaults to `32`.
+- `parallelism` (Number) Sets the parallelism configuration in Airflow. Defaults to `128`.
+
+
 
 <a id="nestedblock--datahub_integration"></a>
 ### Nested Schema for `datahub_integration`
