@@ -1,6 +1,14 @@
 # Changelog
 
-## 0.1.0 15/03/2022
+## 0.1.1 29/03/2023
+
+### features
+
+- Adds support for supplying a default role on a project through the `conveyor_project` resource.
+- Modifies the default value for the `datahub_integration.cluster` property on the `conveyor_environment` resource.
+  This now defaults to the name of the environment instead of "prod".
+
+## 0.1.0 15/03/2023
 
 ### features
 
@@ -10,13 +18,13 @@
 - Adds support for listing the teams of an environment through the `conveyor_environment_teams` datasource
 - The `conveyor_team` datasource now exposes the `users` attribute
 
-## 0.0.9 27/02/2022
+## 0.0.9 27/02/2023
 
 ### features
 
 - Adds support for setting the Airflow configuration
 
-## 0.0.8 21/02/2022
+## 0.0.8 21/02/2023
 
 ### features
 

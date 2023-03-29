@@ -36,6 +36,7 @@ resource "conveyor_project" "my_project" {
 
 ### Optional
 
+- `default_iam_identity` (String) The default IAM role of the project, can be templated.
 - `description` (String) The description of the project, you can input markdown here.
 - `git_repo` (String) The link to the git repo for this project.
 
