@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+## 0.1.2 19/04/2023
+
+### features
+
+- Allow defining and retrieving tags through the `conveyor_tag` resource and data source.
+- Project tags can be configured through the `conveyor_project_tags` resource.
+
 ## 0.1.1 29/03/2023
 
 ### features
