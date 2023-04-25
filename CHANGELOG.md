@@ -1,17 +1,19 @@
 # Changelog
 
-## Unreleased
+## 0.1.4 25/04/2023
+
+### features
+- Add the available tag colors to the documentation of the `conveyor_tag` resource
+- Automatically open the login pop-up when not logged in, instead of printing an error
 
 ## 0.1.3 19/04/2023
 
 ### features
-
 - Add examples and import statements for `conveyor_tag` and `conveyor_project_tags`
 
-## 0.1.2 19/04/2023
+### 0.1.2 19/04/2023
 
 ### features
-
 - Allow defining and retrieving tags through the `conveyor_tag` resource and data source.
 - Project tags can be configured through the `conveyor_project_tags` resource.
 

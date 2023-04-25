@@ -25,7 +25,7 @@ resource "conveyor_tag" "test" {
 
 ### Required
 
-- `color` (String) The color of the tag.
+- `color` (String) The color of the tag. Should be one of: blue, cyan, geekblue, gold, green, lime, magenta, orange, purple, red, volcano.
 - `description` (String) The description of the tag.
 - `name` (String) The name of the tag (max 24 characters).
 
