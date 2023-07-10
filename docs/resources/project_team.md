@@ -40,5 +40,3 @@ resource "conveyor_project_team" "my_project_team" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

@@ -28,5 +28,3 @@ data "conveyor_environment" "dev" {
 ### Read-Only
 
 - `id` (String) The id of the environment.
-
-

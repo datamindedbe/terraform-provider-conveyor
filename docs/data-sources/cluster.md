@@ -29,5 +29,3 @@ data "conveyor_cluster" "dev" {
 
 - `default` (Boolean) Whether this is the default cluster.
 - `id` (String) The id of cluster.
-
-

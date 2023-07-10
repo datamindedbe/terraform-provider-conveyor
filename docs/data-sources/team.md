@@ -37,5 +37,3 @@ Read-Only:
 
 - `id` (String)
 - `member_type` (String)
-
-

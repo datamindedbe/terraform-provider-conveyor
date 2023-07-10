@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5 10/06/2023
+
+### bugfixes
+- Order the tagIds read just like the users has input them to ensure that you do not get constant changes while applying
+
 ## 0.1.4 25/04/2023
 
 ### features

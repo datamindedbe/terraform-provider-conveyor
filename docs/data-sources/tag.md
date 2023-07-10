@@ -24,5 +24,3 @@ Can be used to find the full tag description for a given tag name.
 - `color` (String) The color of the tag.
 - `description` (String) The description of the tag.
 - `id` (String) The id of the tag.
-
-

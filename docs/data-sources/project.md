@@ -28,5 +28,3 @@ data "conveyor_project" "my_project" {
 ### Read-Only
 
 - `id` (String) The id of the project.
-
-

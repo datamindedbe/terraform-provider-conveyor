@@ -66,7 +66,7 @@ Optional:
 
 - `capture_ownership_info` (Boolean) Configures capture ownership info for the Airflow DataHub integration. Defaults to `true`.
 - `capture_tags_info` (Boolean) Configures capture tags info for the Airflow DataHub integration. Defaults to `true`.
-- `cluster` (String) Sets the cluster used by the Airflow DataHub integration. Defaults to the environment name.
+- `cluster` (String) Sets the cluster used by the Airflow DataHub integration. Defaults to `prod`.
 - `conn_id` (String) Sets the connection used by the Airflow DataHub integration. Defaults to `datahub_rest_default`.
 - `graceful_exceptions` (Boolean) When graceful exceptions is set for the Airflow DataHub integration, exceptions will not result in failures in Airflow. Defaults to `true`.
 
