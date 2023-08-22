@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 22/08/2023
+
+### features
+- Add support for the defaultIdeConfig on a project
+- Add support for alert config on a project
+
 ## 0.1.5 10/06/2023
 
 ### bugfixes
