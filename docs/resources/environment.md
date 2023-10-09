@@ -44,6 +44,7 @@ resource "conveyor_environment" "dev" {
 Optional:
 
 - `core` (Block List, Max: 1) Allows you to configure the core Airflow settings. (see [below for nested schema](#nestedblock--airflow_configuration--core))
+- `webserver` (Block List, Max: 1) Allows you to configure the core webserver settings. (see [below for nested schema](#nestedblock--airflow_configuration--webserver))
 
 <a id="nestedblock--airflow_configuration--core"></a>
 ### Nested Schema for `airflow_configuration.core`
@@ -52,6 +53,14 @@ Optional:
 
 - `max_active_task_per_dag` (Number) Sets the parallelism configuration in Airflow. Defaults to `32`.
 - `parallelism` (Number) Sets the parallelism configuration in Airflow. Defaults to `128`.
+
+
+<a id="nestedblock--airflow_configuration--webserver"></a>
+### Nested Schema for `airflow_configuration.webserver`
+
+Optional:
+
+- `navbar_color` (String) Sets the color of the navbar in Airflow. Defaults to `#fff`.
 
 
 
