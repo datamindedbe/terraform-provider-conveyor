@@ -43,4 +43,4 @@ resource "conveyor_project_alert_config" "my_alert_config" {
 
 ### Read-Only
 
-- `id` (String) The ID of the alert config and project ID in the format <alert_config_id>/<project_id>.
+- `id` (String) The unique ID of the alert config.

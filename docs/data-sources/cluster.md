@@ -29,3 +29,4 @@ data "conveyor_cluster" "dev" {
 
 - `default` (Boolean) Whether this is the default cluster.
 - `id` (String) The id of cluster.
+- `oidc_url` (String) The oidc provider url associate to the kubernetes cluster.

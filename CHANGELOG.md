@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0 28/11/2023
+
+### features
+- Add oidc url to cluster datasource
+
 ## 0.2.1 09/10/2023
 
 ### features
@@ -8,6 +13,7 @@
 - Allow adding the git_sub_folder of a project
 - Support several provider configuration options: CICD tokens, profile and allowed_tenant_id
 - Add support for setting the Navbar color for Airflow on an environment
+- Support deleting tags in the CLI
 
 ## 0.2.0 22/08/2023
 
