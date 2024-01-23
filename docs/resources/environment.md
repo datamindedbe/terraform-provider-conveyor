@@ -32,6 +32,7 @@ resource "conveyor_environment" "dev" {
 - `cluster_id` (String) The cluster id of the environment.
 - `datahub_integration` (Block List, Max: 1) Allows you to configure the Airflow DataHub integration. (see [below for nested schema](#nestedblock--datahub_integration))
 - `deletion_protection` (Boolean) Whether to protect your environment from deletion. Defaults to `false`.
+- `iam_identity` (String) The IAM identity attached to the airflow processes.
 - `instance_lifecycle` (String) The instance lifecycle for the environment, either spot or on-demand. Defaults to `spot`.
 
 ### Read-Only
@@ -44,6 +45,7 @@ resource "conveyor_environment" "dev" {
 Optional:
 
 - `core` (Block List, Max: 1) Allows you to configure the core Airflow settings. (see [below for nested schema](#nestedblock--airflow_configuration--core))
+- `secret` (Block List, Max: 1) Allows you to configure the Airflow secrets backend. (see [below for nested schema](#nestedblock--airflow_configuration--secret))
 - `webserver` (Block List, Max: 1) Allows you to configure the core webserver settings. (see [below for nested schema](#nestedblock--airflow_configuration--webserver))
 
 <a id="nestedblock--airflow_configuration--core"></a>
@@ -53,6 +55,43 @@ Optional:
 
 - `max_active_task_per_dag` (Number) Sets the parallelism configuration in Airflow. Defaults to `32`.
 - `parallelism` (Number) Sets the parallelism configuration in Airflow. Defaults to `128`.
+
+
+<a id="nestedblock--airflow_configuration--secret"></a>
+### Nested Schema for `airflow_configuration.secret`
+
+Required:
+
+- `enabled` (Boolean) Enables the Airflow secrets backend integration.
+
+Optional:
+
+- `connection` (Block List, Max: 1) Allows you to configure the Airflow connections using a secret. (see [below for nested schema](#nestedblock--airflow_configuration--secret--connection))
+- `variable` (Block List, Max: 1) Allows you to configure the Airflow variables using a secret. (see [below for nested schema](#nestedblock--airflow_configuration--secret--variable))
+
+<a id="nestedblock--airflow_configuration--secret--connection"></a>
+### Nested Schema for `airflow_configuration.secret.connection`
+
+Required:
+
+- `name` (String) The name of the secret containing the connection information.
+
+Optional:
+
+- `keyvault` (String) The name of the Azure keyvault in which the secret is stored.
+
+
+<a id="nestedblock--airflow_configuration--secret--variable"></a>
+### Nested Schema for `airflow_configuration.secret.variable`
+
+Required:
+
+- `name` (String) The name of the secret containing the Airflow variables.
+
+Optional:
+
+- `keyvault` (String) The name of the Azure keyvault in which the secret is stored.
+
 
 
 <a id="nestedblock--airflow_configuration--webserver"></a>

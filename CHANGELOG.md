@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1 23/01/2024
+
+### features
+- Support configuring secrets backend in Airflow configuration
+- Added support for Conveyor SSO Group mapping to teams
+
 ## 0.3.0 28/11/2023
 
 ### features

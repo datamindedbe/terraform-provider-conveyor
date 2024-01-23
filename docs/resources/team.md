@@ -25,6 +25,10 @@ resource "conveyor_team" "my_team" {
 
 - `name` (String) The name of the team.
 
+### Optional
+
+- `sso_groups` (List of String) The SSO Group mapping to add to the team.
+
 ### Read-Only
 
 - `id` (String) The id of the team.

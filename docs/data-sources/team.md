@@ -28,6 +28,7 @@ data "conveyor_team" "my_team" {
 ### Read-Only
 
 - `id` (String) The id of the team.
+- `sso_groups` (List of String) The SSO Group mapping to add to the team.
 - `users` (List of Object) (see [below for nested schema](#nestedatt--users))
 
 <a id="nestedatt--users"></a>
