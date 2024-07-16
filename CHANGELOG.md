@@ -1,5 +1,12 @@
 # Changelog
 
+## unreleased
+
+## 0.4.0 16/07/2024
+
+### features
+- Package support
+
 ## 0.3.1 23/01/2024
 
 ### features

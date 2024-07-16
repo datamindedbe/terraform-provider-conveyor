@@ -5,7 +5,7 @@ subcategory: ""
 description: |-
   Provides a Conveyor project.
   After creating a project with the terraform provider you can generate the .datafy/project.yaml file with the command:
-  bash
+  
   conveyor project generate-config --name YOUR_PROJECT_NAME
 ---
 
