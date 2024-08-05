@@ -1,6 +1,12 @@
 # Changelog
 
-## unreleased
+## 0.4.1 05/08/2024
+
+In this release the provider got upgraded from v5 to v6 of the terraform plugin protocol.
+This means the provider will only work with terraform >=1.0.
+
+### features
+- Added support for managing project links
 
 ## 0.4.0 16/07/2024
 
