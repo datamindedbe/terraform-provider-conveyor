@@ -47,10 +47,10 @@ resource "conveyor_project_links" "my_project_link" {
 
 Required:
 
-- `icon` (String) The icon of the link
+- `icon` (String) The icon of the link, possible values are: API, AWS, AWS_ATHENA, AWS_CLOUDWATCH, AWS_GLUE, AWS_LAKE_FORMATION, AWS_REDSHIFT, AZURE, DATABRICKS, DATAHUB, DATA_PRODUCT_PORTAL, GRAFANA, JIRA, SNOWFLAKE, TRINO
 - `name` (String) The name of the link, must be unique in the list
 - `url` (String) The url the link should point to
 
 Optional:
 
-- `color` (String) The color of the link
+- `color` (String) The color of the link, possible values are: BLUE, CYAN, GEEKBLUE, GOLD, GREEN, LIME, MAGENTA, ORANGE, PURPLE, RED, VOLCANO

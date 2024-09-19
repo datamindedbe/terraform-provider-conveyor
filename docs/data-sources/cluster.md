@@ -23,10 +23,10 @@ data "conveyor_cluster" "dev" {
 
 ### Required
 
-- `name` (String) The name of the cluster.
+- `name` (String) The name of the cluster
 
 ### Read-Only
 
-- `default` (Boolean) Whether this is the default cluster.
-- `id` (String) The id of cluster.
-- `oidc_url` (String) The oidc provider url associate to the kubernetes cluster.
+- `default` (Boolean) Whether this is the default cluster
+- `id` (String) The id of cluster
+- `oidc_url` (String) The oidc provider url associate to the kubernetes cluster
