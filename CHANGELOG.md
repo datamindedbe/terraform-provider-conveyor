@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.2 19/09/2024
+
+### features
+- Update project links to include the latest icons
+
 ## 0.4.1 05/08/2024
 
 In this release the provider got upgraded from v5 to v6 of the terraform plugin protocol.

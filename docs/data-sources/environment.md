@@ -23,8 +23,8 @@ data "conveyor_environment" "dev" {
 
 ### Required
 
-- `name` (String) The name of the environment.
+- `name` (String) The name of the environment
 
 ### Read-Only
 
-- `id` (String) The id of the environment.
+- `id` (String) The id of the environment
