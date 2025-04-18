@@ -31,7 +31,7 @@ resource "conveyor_environment_user" "my_environment_user" {
 
 - `environment_id` (String) The id of the environment to add the user to.
 - `role` (String) The role the user should have on the environment, either `admin`, `contributor` or `operator`.
-- `user_id` (String) The email address of the user to add.
+- `user_id` (String) The email address of the user to add using only lowercase letters.
 
 ### Read-Only
 

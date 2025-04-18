@@ -31,7 +31,7 @@ resource "conveyor_team_user" "my_team_user" {
 
 - `member_type` (String) The membership type the user should have on the team, either `admin` or `member`.
 - `team_id` (String) The id of the team to add the user to.
-- `user_id` (String) The email address of the user to add.
+- `user_id` (String) The email address of the user to add using only lowercase letters.
 
 ### Read-Only
 

@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.5.0 18/04/2025
+
+### features
+- Added support for `conveyor_user` resource
+
+### bugfixes
+- Do not allow user emails with uppercase letters as Conveyor always uses lowercase letters.
+- Fix an issue where updating an environment with a secrets backend configuration would fail.
+- Allow the provider to correctly handle users and teams that are linked to an environment or project when it gets deleted outside of terraform.
+
+## 0.4.3 28/01/2025
+
+### features
+- Add support for managing IDE base images
+
 ## 0.4.2 19/09/2024
 
 ### features
