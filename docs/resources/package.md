@@ -32,7 +32,7 @@ resource "conveyor_package" "my_package" {
 
 ### Read-Only
 
-- `id` (String) The id of the packages
+- `id` (String) The id of the package
 
 ## Import
 

@@ -32,7 +32,7 @@ resource "conveyor_environment" "dev" {
 - `cluster_id` (String) The cluster id of the environment.
 - `datahub_integration` (Block List, Max: 1) Allows you to configure the Airflow DataHub integration. (see [below for nested schema](#nestedblock--datahub_integration))
 - `deletion_protection` (Boolean) Whether to protect your environment from deletion. Defaults to `false`.
-- `iam_identity` (String) The IAM identity attached to the airflow processes.
+- `iam_identity` (String) The IAM identity attached to the airflow processes. This is required when configuring secrets in the airflow_configuration.
 - `instance_lifecycle` (String) The instance lifecycle for the environment, either spot or on-demand. Defaults to `spot`.
 
 ### Read-Only

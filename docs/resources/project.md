@@ -78,8 +78,8 @@ resource "conveyor_project" "my_project_with_ide_config" {
 
 Optional:
 
-- `build_steps` (Block List) Additional commands that customize the ide environment. (see [below for nested schema](#nestedblock--default_ide_config--build_steps))
-- `vscode_config` (Block List, Max: 1) Vscode configuration of the ide. (see [below for nested schema](#nestedblock--default_ide_config--vscode_config))
+- `build_steps` (Block List) Additional commands that customize the IDE environment. (see [below for nested schema](#nestedblock--default_ide_config--build_steps))
+- `vscode_config` (Block List, Max: 1) VS Code configuration of the ide. (see [below for nested schema](#nestedblock--default_ide_config--vscode_config))
 
 <a id="nestedblock--default_ide_config--build_steps"></a>
 ### Nested Schema for `default_ide_config.build_steps`
