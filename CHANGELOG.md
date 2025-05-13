@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.1 13/05/2025
+
+### features
+- Add support for managing the default IDE base image for a project
+- Added iam_identity to `conveyor_ide_base_image` resource
+
+### bugfixes
+- Fix that the `conveyor_ide_base_image` resource correctly processes optional `vscode_config` and `buildSteps` attributes within the configuration.
+
 ## 0.5.0 18/04/2025
 
 ### features
