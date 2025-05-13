@@ -63,6 +63,7 @@ resource "conveyor_project" "my_project_with_ide_config" {
 ### Optional
 
 - `default_iam_identity` (String) The default IAM role of the project, can be templated.
+- `default_ide_base_image_id` (String) The ID of the base image that will be set as default when starting a new IDE for this project.
 - `default_ide_config` (Block List, Max: 1) Allows you to configure the default IDE configuration. (see [below for nested schema](#nestedblock--default_ide_config))
 - `default_ide_environment_id` (String) The ID of the environment that will be set as default when starting a new IDE for this project.
 - `description` (String) The description of the project, you can input markdown here.
