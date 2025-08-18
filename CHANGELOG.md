@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.5.2 18/08/2025
+
+### features
+- We have delayed some checks from configuration to runtime, this allows for cases where the Conveyor resources are
+  applied conditionally. In an environment where the Conveyor resources would not be applied, no credentials have to be
+  passed to the Conveyor provider.
+- Support creating environments with Airflow 3.
+- Allow to skip sending the invitation email, when inviting new users
+
+### bugfixes
+- Update the `conveyor_alert_config` example and it's documentation.
+
 ## 0.5.1 13/05/2025
 
 ### features

@@ -23,11 +23,11 @@ resource "conveyor_environment" "dev" {
   name = "dev"
 }
 
-resource "conveyor_project_alert_config" "my_alert_config" {
-  project_id  = conveyor_project.my_project.id
-  emails      = ["alerts@conveyordata.com"]
-  dags        = ["dag1", "dag2", "prod-*"]
-  environment = conveyor_environment.dev.id
+resource "conveyor_alert_config" "my_alert_config" {
+  project_id     = conveyor_project.my_project.id
+  emails         = ["alerts@conveyordata.com"]
+  dag_ids        = ["dag1", "dag2", "prod-*"]
+  environment_id = conveyor_environment.dev.id
 }
 ```
 
@@ -36,7 +36,7 @@ resource "conveyor_project_alert_config" "my_alert_config" {
 
 ### Required
 
-- `dag_ids` (List of String) The list of DAG IDs to send alerts for when they fail. You can use '*' as a wildcard, like 'dag-*' to match all DAGs starting with 'dag-' or '*' to match all DAGs.
+- `dag_ids` (List of String) The list of DAG IDs to send alerts for when they fail. You can use '\*' as a wildcard, like 'dag-\*' to match all DAGs starting with 'dag-' or '\*' to match all DAGs.
 - `emails` (List of String) The list of emails to send alerts to.
 - `environment_id` (String) The ID of the environment that the alert config belongs to.
 - `project_id` (String) The ID of the project that the alert config belongs to.

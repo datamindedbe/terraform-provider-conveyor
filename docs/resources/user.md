@@ -25,6 +25,10 @@ resource "conveyor_user" "a_user" {
 
 - `email` (String) The email address of the user.
 
+### Optional
+
+- `skip_invitation_email` (Boolean) Skip sending an invitation email to the user, defaults to false. Only has an effect when user resources is created.
+
 ### Read-Only
 
 - `id` (String) The unique ID of the user.
