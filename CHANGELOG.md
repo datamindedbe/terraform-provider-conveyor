@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.3 11/09/2025
+
+### bugfixes
+
+- Fixes an issue with `conveyor_user` where importing a user and setting `skip_invitation_email` would trigger updates, while updates are not supported.
+- Fixes an issue with `conveyor_user` after imports where the ID would trigger an update, while it does not change
+
 ## 0.5.2 18/08/2025
 
 ### features
