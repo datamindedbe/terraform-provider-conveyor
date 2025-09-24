@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.0 24/09/2025
+
+### features
+- Added support for new `conveyor_project_links` dollar and euro icons
+- Added support for new data source `conveyor_ide_base_image`
+
+### bugfixes
+- Fixed issues with importing non-existent resources for: `conveyor_ide_base_image`, `conveyor_user`, `conveyor_package`
+- Fixed import of `conveyor_ide_base_image` not working
+
 ## 0.5.3 11/09/2025
 
 ### bugfixes
