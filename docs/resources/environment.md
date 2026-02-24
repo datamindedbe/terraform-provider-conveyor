@@ -28,7 +28,7 @@ resource "conveyor_environment" "dev" {
 ### Optional
 
 - `airflow_configuration` (Block List, Max: 1) Allows you to configure Airflow. (see [below for nested schema](#nestedblock--airflow_configuration))
-- `airflow_version` (String) The Airflow version of the environment, currently only Airflow 2 is supported. Defaults to `2`.
+- `airflow_version` (String) The Airflow version of the environment. Defaults to `3`.
 - `cluster_id` (String) The cluster id of the environment.
 - `datahub_integration` (Block List, Max: 1) Allows you to configure the Airflow DataHub integration. (see [below for nested schema](#nestedblock--datahub_integration))
 - `deletion_protection` (Boolean) Whether to protect your environment from deletion. Defaults to `false`.
@@ -112,11 +112,11 @@ Required:
 
 Optional:
 
-- `capture_ownership_info` (Boolean) Configures capture ownership info for the Airflow DataHub integration. Defaults to `true`.
-- `capture_tags_info` (Boolean) Configures capture tags info for the Airflow DataHub integration. Defaults to `true`.
+- `capture_ownership_info` (Boolean) (Deprecated) Configures capture ownership info for the Airflow DataHub integration. Defaults to `true`.
+- `capture_tags_info` (Boolean) (Deprecated) Configures capture tags info for the Airflow DataHub integration. Defaults to `true`.
 - `cluster` (String) Sets the cluster used by the Airflow DataHub integration. Defaults to `prod`.
 - `conn_id` (String) Sets the connection used by the Airflow DataHub integration. Defaults to `datahub_rest_default`.
-- `graceful_exceptions` (Boolean) When graceful exceptions is set for the Airflow DataHub integration, exceptions will not result in failures in Airflow. Defaults to `true`.
+- `graceful_exceptions` (Boolean) (Deprecated) When graceful exceptions is set for the Airflow DataHub integration, exceptions will not result in failures in Airflow. Defaults to `true`.
 
 ## Import
 
