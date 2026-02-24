@@ -26,6 +26,7 @@ resource "conveyor_project" "my_project" {
   name = "my_project"
 }
 
+# A project where you configure the default IDE config in Terraform
 resource "conveyor_project" "my_project_with_ide_config" {
   name = "my_project_with_ide_config"
 
@@ -49,6 +50,15 @@ resource "conveyor_project" "my_project_with_ide_config" {
         sudo ./aws/install
         EOT
     }
+  }
+}
+
+# A project where you do not want to manage the default IDE config from Terraform and let users use the UI or CLI instead.
+resource "conveyor_project" "my_project_no_ide_config" {
+  name = "my_project_no_ide_config"
+
+  lifecycle {
+    ignore_changes = [default_ide_config]
   }
 }
 ```

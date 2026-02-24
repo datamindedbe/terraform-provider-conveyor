@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.7.0 24/02/2026
+
+### features
+
+- Added support for new `conveyor_project_links` soda icon
+
+### breaking changes (update major version)
+
+- The `default_ide_config` on the `conveyor_project` resource is not a computed field anymore.
+  This means that if you do not specify it, it will remove the default IDE config from the project whereas before it would keep the existing config.
+  If you want to keep the existing config, you need to explicitly set it in terraform or set `ignore_changes = [default_ide_config]` in a lifecycle block.
+- The default environment version is now 3, instead of 2.
+
 ## 0.6.0 24/09/2025
 
 ### features
@@ -27,7 +40,7 @@
 - Allow to skip sending the invitation email, when inviting new users
 
 ### bugfixes
-- Update the `conveyor_alert_config` example and it's documentation.
+- Update the `conveyor_alert_config` example and its documentation.
 
 ## 0.5.1 13/05/2025
 
@@ -171,7 +184,7 @@ This means the provider will only work with terraform >=1.0.
 ### bugfixes
 
 - Show an error message when the user is not logged in
-- Use the same token used by the recent conveyor cli's
+- Use the same token used by the recent conveyor CLIs
 
 ## 0.0.4 12/8/2022
 
