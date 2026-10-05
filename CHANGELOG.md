@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.0 07/10/2026
+
+### features
+
+- Added support for `based_on` in `conveyor_ide_base_image`.
+- Added support for service accounts with new resources `conveyor_service_account` and `conveyor_service_account_token`,
+  data source `conveyor_service_account` and ephemeral resource `conveyor_service_account_token`.
+
 ## 0.7.0 24/02/2026
 
 ### features
