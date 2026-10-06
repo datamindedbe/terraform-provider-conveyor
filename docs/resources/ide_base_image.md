@@ -41,6 +41,7 @@ resource "conveyor_ide_base_image" "my_image" {
 
 ### Optional
 
+- `based_on` (String) The base image that this IDE base image is based on. Valid values: `22.04`, `24.04`.
 - `description` (String) The description of the IDE base image
 - `iam_identity` (String) The iam identity of the IDE base image
 
