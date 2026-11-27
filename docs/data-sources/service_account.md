@@ -29,5 +29,6 @@ data "conveyor_service_account" "my_service_account" {
 
 - `environment_ids` (Set of String) The ids of the environments this service account is scoped to.
 - `id` (String) The id of the service account.
+- `package_ids` (Set of String) The ids of the packages this service account is scoped to.
 - `project_ids` (Set of String) The ids of the projects this service account is scoped to.
 - `type` (String) The type of the service account. One of `scoped`, `admin`.
